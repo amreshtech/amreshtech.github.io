@@ -1,1 +1,0 @@
-# amreshtech.github.io

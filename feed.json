@@ -1,0 +1,43 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Amresh Mishra",
+    "description": "",
+    "home_page_url": "https://amreshtech.github.io",
+    "feed_url": "https://amreshtech.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Amresh Mishra"
+    },
+    "items": [
+        {
+            "id": "https://amreshtech.github.io/another-test/",
+            "url": "https://amreshtech.github.io/another-test/",
+            "title": "Another Test",
+            "summary": "This is something called another test.",
+            "content_html": "This is something called another test.",
+            "image": "https://amreshtech.github.io/media/posts/2/0_7ybCSzwqrIlgGp8S.jpg",
+            "author": {
+                "name": "Amresh Mishra"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-05-17T23:42:42+01:00",
+            "date_modified": "2019-05-17T23:42:42+01:00"
+        },
+        {
+            "id": "https://amreshtech.github.io/test-post/",
+            "url": "https://amreshtech.github.io/test-post/",
+            "title": "TEst Post",
+            "summary": "This is a test.",
+            "content_html": "This is a test.",
+            "image": "https://amreshtech.github.io/media/posts/1/0.jpg",
+            "author": {
+                "name": "Amresh Mishra"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-05-11T09:00:55+01:00",
+            "date_modified": "2019-05-11T09:00:55+01:00"
+        }
+    ]
+}
