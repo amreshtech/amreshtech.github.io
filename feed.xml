@@ -3,7 +3,7 @@
     <title>Amresh Mishra</title>
     <link href="https://amreshtech.github.io/feed.xml" rel="self" />
     <link href="https://amreshtech.github.io" />
-    <updated>2019-05-18T00:36:20+01:00</updated>
+    <updated>2019-05-18T00:48:46+01:00</updated>
     <author>
         <name>Amresh Mishra</name>
     </author>
@@ -140,6 +140,28 @@
 <footer class="u-paddingTop10">
 <div class="container u-maxWidth740"> </div>
 </footer>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Task Management System with Angular &amp; Firebase</title>
+        <author>
+            <name>Amresh Mishra</name>
+        </author>
+        <link href="https://amreshtech.github.io/task-management-system-with-angular-and-firebase/"/>
+        <id>https://amreshtech.github.io/task-management-system-with-angular-and-firebase/</id>
+
+        <updated>2019-05-18T00:48:37+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://amreshtech.github.io/media/posts/3/tms.JPG" alt="" />
+                    A task management system where you can add, assign and track task&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://amreshtech.github.io/media/posts/3/tms.JPG" alt="" />
+                A task management system where you can add, assign and track task status. This includes Firebase REST services code.
             ]]>
         </content>
     </entry>

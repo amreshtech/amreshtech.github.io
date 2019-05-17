@@ -23,6 +23,21 @@
             ],
             "date_published": "2019-03-30T11:42:00+00:00",
             "date_modified": "2019-05-18T00:34:09+01:00"
+        },
+        {
+            "id": "https://amreshtech.github.io/task-management-system-with-angular-and-firebase/",
+            "url": "https://amreshtech.github.io/task-management-system-with-angular-and-firebase/",
+            "title": "Task Management System with Angular &amp; Firebase",
+            "summary": "A task management system where you can add, assign and track task&hellip;",
+            "content_html": "A task management system where you can add, assign and track task status. This includes Firebase REST services code.",
+            "image": "https://amreshtech.github.io/media/posts/3/tms.JPG",
+            "author": {
+                "name": "Amresh Mishra"
+            },
+            "tags": [
+            ],
+            "date_published": "2018-09-15T12:44:00+01:00",
+            "date_modified": "2019-05-18T00:48:37+01:00"
         }
     ]
 }
