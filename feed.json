@@ -10,6 +10,45 @@
     },
     "items": [
         {
+            "id": "https://amreshtech.github.io/nhl-attendance/",
+            "url": "https://amreshtech.github.io/nhl-attendance/",
+            "title": "NHL Attendance",
+            "image": "https://amreshtech.github.io/media/posts/6/NHL.JPG",
+            "author": {
+                "name": "Amresh Mishra"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-05-19T10:50:11+01:00",
+            "date_modified": "2019-05-19T10:50:11+01:00"
+        },
+        {
+            "id": "https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/",
+            "url": "https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/",
+            "title": "How much would a night out cost you across the world ?",
+            "image": "https://amreshtech.github.io/media/posts/5/party.JPG",
+            "author": {
+                "name": "Amresh Mishra"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-05-19T10:48:51+01:00",
+            "date_modified": "2019-05-19T10:48:51+01:00"
+        },
+        {
+            "id": "https://amreshtech.github.io/gender-pay-gap-how-grim-is-the-situation-in-us/",
+            "url": "https://amreshtech.github.io/gender-pay-gap-how-grim-is-the-situation-in-us/",
+            "title": "Gender Pay Gap: How grim is the situation in US ?",
+            "image": "https://amreshtech.github.io/media/posts/4/gender-gap.JPG",
+            "author": {
+                "name": "Amresh Mishra"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-05-19T10:45:29+01:00",
+            "date_modified": "2019-05-19T10:45:29+01:00"
+        },
+        {
             "id": "https://amreshtech.github.io/taming-the-big-data-part-1/",
             "url": "https://amreshtech.github.io/taming-the-big-data-part-1/",
             "title": "Taming the Big Data with Alteryx &amp; Tableau: Actionable Insights from Deutsche Börse Trading Data — Part 1",
@@ -22,7 +61,7 @@
             "tags": [
             ],
             "date_published": "2019-03-30T11:42:00+00:00",
-            "date_modified": "2019-05-18T00:34:09+01:00"
+            "date_modified": "2019-05-19T10:40:24+01:00"
         },
         {
             "id": "https://amreshtech.github.io/task-management-system-with-angular-and-firebase/",

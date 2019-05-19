@@ -3,12 +3,48 @@
     <title>Amresh Mishra</title>
     <link href="https://amreshtech.github.io/feed.xml" rel="self" />
     <link href="https://amreshtech.github.io" />
-    <updated>2019-05-19T09:34:54+01:00</updated>
+    <updated>2019-05-19T10:54:48+01:00</updated>
     <author>
         <name>Amresh Mishra</name>
     </author>
     <id>https://amreshtech.github.io</id>
 
+    <entry>
+        <title>NHL Attendance</title>
+        <author>
+            <name>Amresh Mishra</name>
+        </author>
+        <link href="https://amreshtech.github.io/nhl-attendance/"/>
+        <id>https://amreshtech.github.io/nhl-attendance/</id>
+
+        <updated>2019-05-19T10:50:11+01:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>How much would a night out cost you across the world ?</title>
+        <author>
+            <name>Amresh Mishra</name>
+        </author>
+        <link href="https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/"/>
+        <id>https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/</id>
+
+        <updated>2019-05-19T10:48:51+01:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>Gender Pay Gap: How grim is the situation in US ?</title>
+        <author>
+            <name>Amresh Mishra</name>
+        </author>
+        <link href="https://amreshtech.github.io/gender-pay-gap-how-grim-is-the-situation-in-us/"/>
+        <id>https://amreshtech.github.io/gender-pay-gap-how-grim-is-the-situation-in-us/</id>
+
+        <updated>2019-05-19T10:45:29+01:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
     <entry>
         <title>Taming the Big Data with Alteryx &amp; Tableau: Actionable Insights from Deutsche Börse Trading Data — Part 1</title>
         <author>
@@ -17,7 +53,7 @@
         <link href="https://amreshtech.github.io/taming-the-big-data-part-1/"/>
         <id>https://amreshtech.github.io/taming-the-big-data-part-1/</id>
 
-        <updated>2019-05-18T00:34:09+01:00</updated>
+        <updated>2019-05-19T10:40:24+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://amreshtech.github.io/media/posts/2/0_7ybCSzwqrIlgGp8S.jpg" alt="" />
