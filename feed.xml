@@ -3,7 +3,7 @@
     <title>Amresh Mishra</title>
     <link href="https://amreshtech.github.io/feed.xml" rel="self" />
     <link href="https://amreshtech.github.io" />
-    <updated>2019-05-24T22:59:41+01:00</updated>
+    <updated>2019-05-24T23:02:13+01:00</updated>
     <author>
         <name>Amresh Mishra</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://amreshtech.github.io/taming-the-big-data-part-1/"/>
         <id>https://amreshtech.github.io/taming-the-big-data-part-1/</id>
 
-        <updated>2019-05-24T22:58:26+01:00</updated>
+        <updated>2019-05-24T23:02:06+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://amreshtech.github.io/media/posts/2/0_7ybCSzwqrIlgGp8S.jpg" alt="" />
@@ -42,48 +42,23 @@
 <p id="a261" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">AWS Secret Key :</strong> Obtained from my profile on AWS</p>
 <p id="8914" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Endpoint:</strong> s3-eu-central-1.amazonaws.com</p>
 <p id="89ca" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Bucket Name:</strong> deutsche-boerse-xetra-pds</p>
-<p id="e945" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Object Name:</strong> There is a catch here which I will explain after the following image. </p>
-<figure id="5868" class="graf graf--figure graf-after--p">
-<div class="aspectRatioPlaceholder is-locked">
-<div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"    ><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="47" height="75"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*FIE9QhXsBWfT-1WG" ></div>
-</div>
-</figure>
+<p id="e945" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Object Name:</strong> There is a catch here which I will explain after the following image. <img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*FIE9QhXsBWfT-1WG" ></p>
 <p id="840e" class="graf graf--p graf-after--figure">Amazon S3 Download tool on Alteryx Designer has a limitation. <strong class="markup--strong markup--p-strong">It allows to select only a single file as input</strong> and we can not even use wildcards unlike Input Data tool.</p>
 <p id="dfd3" class="graf graf--p graf-after--p">The Deutsche Börse data bucket has CSV files for each hour for each day (i.e. 24 files for each day). <strong class="markup--strong markup--p-strong">Trading hours on Xetra at Frankfurt is from 9:00 AM to 17:30 PM CET.</strong> Hence, only 8 of those CSV files each day contain data while the rest are blank. So, we have to work with Objects ending with <strong class="markup--strong markup--p-strong">“09.csv” to “16.csv”</strong>.</p>
 <h3 id="2102" class="graf graf--h3 graf-after--p">My ETL Workflow</h3>
 <p id="2284" class="graf graf--p graf-after--h3">I chose data objects from a single date <strong class="markup--strong markup--p-strong">“27th March, 2019”</strong>. To overcome the single file limitation on Amazon S3 Download tool, I used 8 (for trading hours only) different of those as inputs and used the <strong class="markup--strong markup--p-strong">Union tool to merge them all</strong>into one. I know this is not the best way to do it but this is just a start. </p>
-<figure id="c498" class="graf graf--figure graf-after--p">
-<div class="aspectRatioPlaceholder is-locked">
-<div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"    ><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="56" height="75"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*CNYDReShIGqTYO3n" ></div>
-</div>
-</figure>
+<p><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*CNYDReShIGqTYO3n" ></p>
 <p id="4118" class="graf graf--p graf-after--figure">Then, I wanted a single column containing the timestamp for each trade. The dataset doesn’t contain any such column but has a two different columns containing Date and Time values for each trade. I went on to use <strong class="markup--strong markup--p-strong">Formula tool </strong>to create a new “Date_Time” column with a simple formula <strong class="markup--strong markup--p-strong">[Date] + “ “ + [Time]</strong>. </p>
-<figure id="d300" class="graf graf--figure graf-after--p">
-<div class="aspectRatioPlaceholder is-locked">
-<div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"    ><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="75" height="37"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*n6qJWTEjLfAXb0F5" ></div>
-</div>
-</figure>
+<p><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*n6qJWTEjLfAXb0F5" ></p>
 <p id="b98b" class="graf graf--p graf-after--figure">I could have chosen the Data type for newly created column as DateTime in the last step but this would have resulted in an error because the<strong class="markup--strong markup--p-strong"> Time column has data in hh:mm format</strong>. I used <strong class="markup--strong markup--p-strong">DateTime tool</strong> to convert the timestamp from “yyyy-MM-dd hh:mm” to “yyyy-MM-dd hh:mm:ss” format. I created a new column “Trade_DateTime” with the new data. </p>
-<figure id="8ba5" class="graf graf--figure graf-after--p">
-<div class="aspectRatioPlaceholder is-locked">
-<div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"    ><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="51" height="75"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/1*Ak_whhV2ctxJS1VnlbR8zQ.jpeg" ></div>
-</div>
-</figure>
-<p id="9ffd" class="graf graf--p graf-after--figure">It is very important to have only necessary columns in correct data type before it is fed into any visualization tool for further analysis. All the securities are traded in Euro currency, so Currency column is not required. Similarly the columns ISIN, SecurityID, Date, Time and Date_Time columns are no more required. Since all the columns are already in String data type, I had to change them into appropriate data type as per the original data dictionary. I used <strong class="markup--strong markup--p-strong">Select tool</strong> for to transform the data. </p>
-<figure id="a682" class="graf graf--figure graf-after--p">
-<div class="aspectRatioPlaceholder is-locked">
-<div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"    ><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="59" height="75"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*BLjXWxLQAIoj30EC" ></div>
-</div>
-</figure>
+<p><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/1*Ak_whhV2ctxJS1VnlbR8zQ.jpeg" ></p>
+<p id="9ffd" class="graf graf--p graf-after--figure">It is very important to have only necessary columns in correct data type before it is fed into any visualization tool for further analysis. All the securities are traded in Euro currency, so Currency column is not required. Similarly the columns ISIN, SecurityID, Date, Time and Date_Time columns are no more required. Since all the columns are already in String data type, I had to change them into appropriate data type as per the original data dictionary. I used <strong class="markup--strong markup--p-strong">Select tool</strong> for to transform the data.</p>
+<p><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*BLjXWxLQAIoj30EC" ></p>
 <p id="12e1" class="graf graf--p graf-after--figure">Now the data is sufficiently ready for basic analysis. I used the <strong class="markup--strong markup--p-strong">Output Data tool</strong> to save the data as <strong class="markup--strong markup--p-strong">Tableau Hyper Data Extract file</strong>. At the same time I used <strong class="markup--strong markup--p-strong">Browse tool</strong> to see the processed data in Alteryx Designer itself.</p>
 <p id="1266" class="graf graf--p graf-after--p">Here is the complete workflow :</p>
 <p><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*SIe8K-79xdnLo387" ></p>
 <p id="2072" class="graf graf--p graf-after--figure">First 10 records from the transformed data looks something like this:</p>
-<figure id="19cf" class="graf graf--figure graf-after--p">
-<div class="aspectRatioPlaceholder is-locked">
-<div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded is-imageLoaded"      ><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="75" height="12"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*jiEWk1fldkvSHs5m" ></div>
-</div>
-</figure>
+<p><img class="progressiveMedia-image js-progressiveMedia-image" src="https://cdn-images-1.medium.com/max/800/0*jiEWk1fldkvSHs5m" ></p>
 <h3 id="2e50" class="graf graf--h3 graf-after--figure">Trading Insights with Tableau</h3>
 <p id="0d05" class="graf graf--p graf-after--h3">Tableau is one of the best tools out there for data visualizations. I have been using it since last 3 years, both at my last workplace back in India and as part of my Business Analytics course at NUI Galway, Ireland. Hence, Tableau was my first choice to get some insight from the available data.</p>
 <p id="6c10" class="graf graf--p graf-after--p">I immediately fired up Tableau to create 4 beautiful worksheets:</p>
