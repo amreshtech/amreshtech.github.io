@@ -3,7 +3,7 @@
     <title>Amresh Mishra</title>
     <link href="https://amreshtech.github.io/feed.xml" rel="self" />
     <link href="https://amreshtech.github.io" />
-    <updated>2019-05-24T22:19:33+01:00</updated>
+    <updated>2019-05-24T22:24:32+01:00</updated>
     <author>
         <name>Amresh Mishra</name>
     </author>
@@ -174,7 +174,7 @@
         <link href="https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/"/>
         <id>https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/</id>
 
-        <updated>2019-05-24T22:19:20+01:00</updated>
+        <updated>2019-05-24T22:24:23+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://amreshtech.github.io/media/posts/5/party.JPG" alt="" />
@@ -186,7 +186,7 @@
                     <img src="https://amreshtech.github.io/media/posts/5/party.JPG" alt="" />
                 <p>When travellers across the world go on journeys of their lifetime, night outs are one of the things always on their priority list. Here, I used data provided by Makeover Monday team to create a compelling visualization on how much will it cost travellers for a date and for a party in different cities around the world.</p>
 <p><strong>Link: </strong><em><a href="https://public.tableau.com/profile/amresh.mishra#!/vizhome/NightOutsCost/Dashboard1">https://public.tableau.com/profile/amresh.mishra#!/vizhome/NightOutsCost/Dashboard1</a></em><em> </em></p>
-<center><iframe width="1024" height="768" src="https://public.tableau.com/views/NightOutsCost/Dashboard1?:embed=y&amp;:display_count=yes&amp;:toolbar=no&amp;:origin=viz_share_link" frameborder="0"></iframe></center>
+<center><iframe width="1024" height="768" src="https://public.tableau.com/views/NightOutsCost/Dashboard1?:showVizHome=no&amp;:embed=true" frameborder="0"></iframe></center>
             ]]>
         </content>
     </entry>

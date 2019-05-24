@@ -44,7 +44,7 @@
             "url": "https://amreshtech.github.io/how-much-would-a-night-out-cost-you-across-the-world/",
             "title": "How much would a night out cost you across the world ?",
             "summary": "When travellers across the world go on journeys of their lifetime, night outs&hellip;",
-            "content_html": "<p>When travellers across the world go on journeys of their lifetime, night outs are one of the things always on their priority list. Here, I used data provided by Makeover Monday team to create a compelling visualization on how much will it cost travellers for a date and for a party in different cities around the world.</p>\n<p><strong>Link: </strong><em><a href=\"https://public.tableau.com/profile/amresh.mishra#!/vizhome/NightOutsCost/Dashboard1\">https://public.tableau.com/profile/amresh.mishra#!/vizhome/NightOutsCost/Dashboard1</a></em><em> </em></p>\n<center><iframe width=\"1024\" height=\"768\" src=\"https://public.tableau.com/views/NightOutsCost/Dashboard1?:embed=y&amp;:display_count=yes&amp;:toolbar=no&amp;:origin=viz_share_link\" frameborder=\"0\"></iframe></center>",
+            "content_html": "<p>When travellers across the world go on journeys of their lifetime, night outs are one of the things always on their priority list. Here, I used data provided by Makeover Monday team to create a compelling visualization on how much will it cost travellers for a date and for a party in different cities around the world.</p>\n<p><strong>Link: </strong><em><a href=\"https://public.tableau.com/profile/amresh.mishra#!/vizhome/NightOutsCost/Dashboard1\">https://public.tableau.com/profile/amresh.mishra#!/vizhome/NightOutsCost/Dashboard1</a></em><em> </em></p>\n<center><iframe width=\"1024\" height=\"768\" src=\"https://public.tableau.com/views/NightOutsCost/Dashboard1?:showVizHome=no&amp;:embed=true\" frameborder=\"0\"></iframe></center>",
             "image": "https://amreshtech.github.io/media/posts/5/party.JPG",
             "author": {
                 "name": "Amresh Mishra"
@@ -52,7 +52,7 @@
             "tags": [
             ],
             "date_published": "2018-11-28T10:48:00+00:00",
-            "date_modified": "2019-05-24T22:19:20+01:00"
+            "date_modified": "2019-05-24T22:24:23+01:00"
         },
         {
             "id": "https://amreshtech.github.io/gender-pay-gap-how-grim-is-the-situation-in-us/",
